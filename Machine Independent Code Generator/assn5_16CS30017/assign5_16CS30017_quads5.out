@@ -1,0 +1,241 @@
+===================================================================================================================
+Symbol Table: Global                                                             Parent: null
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+main                integer                                   4           0          main
+-------------------------------------------------------------------------------------------------------------------
+
+===================================================================================================================
+Symbol Table: main                                                               Parent: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+return              integer                                   4           0          null
+printf              integer                                   4           4          null
+t00                 ptr(char)                "\n\n\t\tStudytonight - Best place to learn\n\n\n"4           8          null
+t01                 integer                                   4           12         null
+a                   arr(2, arr(2, integer))                   16          16         null
+t02                 integer                  2                4           32         null
+t03                 integer                  2                4           36         null
+i                   integer                                   4           40         null
+j                   integer                                   4           44         null
+determinant         integer                                   4           48         null
+t04                 ptr(char)                "\n\nEnter the 4 elements of the array\n"4           52         null
+t05                 integer                                   4           56         null
+t06                 integer                  0                4           60         null
+t07                 integer                                   4           64         null
+t08                 integer                  2                4           68         null
+t09                 integer                                   4           72         null
+t10                 integer                  0                4           76         null
+t11                 integer                                   4           80         null
+t12                 integer                  2                4           84         null
+t13                 integer                                   4           88         null
+scanf               integer                                   4           92         null
+t14                 ptr(char)                "%d"             4           96         null
+t15                 integer                                   4           100        null
+t16                 integer                                   4           104        null
+t17                 integer                                   4           108        null
+t18                 ptr(integer)                              4           112        null
+t19                 integer                                   4           116        null
+t20                 ptr(char)                "\n\nThe entered matrix is: \n\n"4           120        null
+t21                 integer                                   4           124        null
+t22                 integer                  0                4           128        null
+t23                 integer                                   4           132        null
+t24                 integer                  2                4           136        null
+t25                 integer                                   4           140        null
+t26                 integer                  0                4           144        null
+t27                 integer                                   4           148        null
+t28                 integer                  2                4           152        null
+t29                 integer                                   4           156        null
+t30                 ptr(char)                "%d\t"           4           160        null
+t31                 integer                                   4           164        null
+t32                 integer                                   4           168        null
+t33                 integer                                   4           172        null
+t34                 integer                                   4           176        null
+t35                 integer                                   4           180        null
+t36                 ptr(char)                "\n"             4           184        null
+t37                 integer                                   4           188        null
+t38                 integer                  0                4           192        null
+t39                 integer                                   4           196        null
+t40                 integer                  0                4           200        null
+t41                 integer                                   4           204        null
+t42                 integer                                   4           208        null
+t43                 integer                                   4           212        null
+t44                 integer                  1                4           216        null
+t45                 integer                                   4           220        null
+t46                 integer                  1                4           224        null
+t47                 integer                                   4           228        null
+t48                 integer                                   4           232        null
+t49                 integer                                   4           236        null
+t50                 integer                  1                4           240        null
+t51                 integer                                   4           244        null
+t52                 integer                  0                4           248        null
+t53                 integer                                   4           252        null
+t54                 integer                                   4           256        null
+t55                 integer                                   4           260        null
+t56                 integer                  0                4           264        null
+t57                 integer                                   4           268        null
+t58                 integer                  1                4           272        null
+t59                 integer                                   4           276        null
+t60                 integer                                   4           280        null
+t61                 integer                                   4           284        null
+t62                 integer                                   4           288        null
+t63                 integer                                   4           292        null
+t64                 ptr(char)                "\n\nDterminant of 2x2 matrix is : %d - %d =  %d"4           296        null
+t65                 integer                  0                4           300        null
+t66                 integer                                   4           304        null
+t67                 integer                  0                4           308        null
+t68                 integer                                   4           312        null
+t69                 integer                                   4           316        null
+t70                 integer                                   4           320        null
+t71                 integer                  1                4           324        null
+t72                 integer                                   4           328        null
+t73                 integer                  1                4           332        null
+t74                 integer                                   4           336        null
+t75                 integer                                   4           340        null
+t76                 integer                                   4           344        null
+t77                 integer                  1                4           348        null
+t78                 integer                                   4           352        null
+t79                 integer                  0                4           356        null
+t80                 integer                                   4           360        null
+t81                 integer                                   4           364        null
+t82                 integer                                   4           368        null
+t83                 integer                  0                4           372        null
+t84                 integer                                   4           376        null
+t85                 integer                  1                4           380        null
+t86                 integer                                   4           384        null
+t87                 integer                                   4           388        null
+t88                 integer                                   4           392        null
+t89                 integer                                   4           396        null
+t90                 ptr(char)                "\n\n\t\t\tCoding is Fun !\n\n\n"4           400        null
+t91                 integer                                   4           404        null
+t92                 integer                  0                4           408        null
+-------------------------------------------------------------------------------------------------------------------
+
+==============================
+Quad Translation
+------------------------------
+
+main: 
+
+	1   :	param t00
+	2   :	t01 = call printf, 1
+	3   :	t02 = 2
+	4   :	t03 = 2
+	5   :	param t04
+	6   :	t05 = call printf, 1
+	7   :	t06 = 0
+	8   :	i = t06
+	9   :	t08 = 2
+	10  :	if i > t08 goto 15
+	11  :	goto 32
+	12  :	t09 = i
+	13  :	i = i + 1
+	14  :	goto 9
+	15  :	t10 = 0
+	16  :	j = t10
+	17  :	t12 = 2
+	18  :	if j > t12 goto 23
+	19  :	goto 12
+	20  :	t13 = j
+	21  :	j = j + 1
+	22  :	goto 17
+	23  :	param t14
+	24  :	t15 = i * 8
+	25  :	t17 = j * 4
+	26  :	t16 = t15 + t17
+	27  :	t18 = &t15
+	28  :	param t18
+	29  :	t19 = call scanf, 2
+	30  :	goto 20
+	31  :	goto 12
+	32  :	param t20
+	33  :	t21 = call printf, 1
+	34  :	t22 = 0
+	35  :	i = t22
+	36  :	t24 = 2
+	37  :	if i > t24 goto 42
+	38  :	goto 61
+	39  :	t25 = i
+	40  :	i = i + 1
+	41  :	goto 36
+	42  :	t26 = 0
+	43  :	j = t26
+	44  :	t28 = 2
+	45  :	if j > t28 goto 50
+	46  :	goto 58
+	47  :	t29 = j
+	48  :	j = j + 1
+	49  :	goto 44
+	50  :	param t30
+	51  :	t31 = i * 8
+	52  :	t33 = j * 4
+	53  :	t32 = t31 + t33
+	54  :	t34 = t31[t32]
+	55  :	param t34
+	56  :	t35 = call printf, 2
+	57  :	goto 47
+	58  :	param t36
+	59  :	t37 = call printf, 1
+	60  :	goto 39
+	61  :	t38 = 0
+	62  :	t39 = t38 * 8
+	63  :	t40 = 0
+	64  :	t42 = t40 * 4
+	65  :	t41 = t39 + t42
+	66  :	t43 = t39[t41]
+	67  :	t44 = 1
+	68  :	t45 = t44 * 8
+	69  :	t46 = 1
+	70  :	t48 = t46 * 4
+	71  :	t47 = t45 + t48
+	72  :	t49 = t43 * t45
+	73  :	t50 = 1
+	74  :	t51 = t50 * 8
+	75  :	t52 = 0
+	76  :	t54 = t52 * 4
+	77  :	t53 = t51 + t54
+	78  :	t55 = t51[t53]
+	79  :	t56 = 0
+	80  :	t57 = t56 * 8
+	81  :	t58 = 1
+	82  :	t60 = t58 * 4
+	83  :	t59 = t57 + t60
+	84  :	t61 = t55 * t57
+	85  :	t62 = t49 - t61
+	86  :	determinant = t62
+	87  :	param t64
+	88  :	t65 = 0
+	89  :	t66 = t65 * 8
+	90  :	t67 = 0
+	91  :	t69 = t67 * 4
+	92  :	t68 = t66 + t69
+	93  :	t70 = t66[t68]
+	94  :	t71 = 1
+	95  :	t72 = t71 * 8
+	96  :	t73 = 1
+	97  :	t75 = t73 * 4
+	98  :	t74 = t72 + t75
+	99  :	t76 = t70 * t72
+	100 :	param t76
+	101 :	t77 = 1
+	102 :	t78 = t77 * 8
+	103 :	t79 = 0
+	104 :	t81 = t79 * 4
+	105 :	t80 = t78 + t81
+	106 :	t82 = t78[t80]
+	107 :	t83 = 0
+	108 :	t84 = t83 * 8
+	109 :	t85 = 1
+	110 :	t87 = t85 * 4
+	111 :	t86 = t84 + t87
+	112 :	t88 = t82 * t84
+	113 :	param t88
+	114 :	param determinant
+	115 :	t89 = call printf, 4
+	116 :	param t90
+	117 :	t91 = call printf, 1
+	118 :	t92 = 0
+	119 :	ret t92
+------------------------------

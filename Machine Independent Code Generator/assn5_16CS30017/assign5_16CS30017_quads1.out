@@ -1,0 +1,118 @@
+===================================================================================================================
+Symbol Table: Global                                                             Parent: null
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+fibonacci           void                                      0           0          fibonacci
+main                void                                      0           0          main
+-------------------------------------------------------------------------------------------------------------------
+
+===================================================================================================================
+Symbol Table: fibonacci                                                          Parent: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+num                 integer                                   4           0          null
+a                   integer                                   4           4          null
+b                   integer                                   4           8          null
+c                   integer                                   4           12         null
+i                   integer                  3                4           16         null
+t00                 integer                  3                4           20         null
+t01                 integer                  0                4           24         null
+t02                 integer                                   4           28         null
+t03                 integer                  1                4           32         null
+t04                 integer                                   4           36         null
+t05                 integer                  1                4           40         null
+printf              integer                                   4           44         null
+t06                 ptr(char)                "%d"             4           48         null
+t07                 integer                                   4           52         null
+t08                 integer                  2                4           56         null
+t09                 ptr(char)                "%d\t%d"         4           60         null
+t10                 integer                                   4           64         null
+t11                 integer                                   4           68         null
+t12                 integer                                   4           72         null
+t13                 ptr(char)                "\t%d"           4           76         null
+t14                 integer                                   4           80         null
+t15                 integer                                   4           84         null
+t16                 integer                                   4           88         null
+t17                 integer                                   4           92         null
+-------------------------------------------------------------------------------------------------------------------
+
+===================================================================================================================
+Symbol Table: main                                                               Parent: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+num                 integer                  0                4           0          null
+t00                 integer                  0                4           4          null
+clrscr              integer                                   4           8          null
+printf              integer                                   4           12         null
+t01                 ptr(char)                "Enter number of terms\t"4           16         null
+t02                 integer                                   4           20         null
+scanf               integer                                   4           24         null
+t03                 ptr(char)                "%d"             4           28         null
+t04                 ptr(integer)                              4           32         null
+t05                 integer                                   4           36         null
+fibonacci           integer                                   4           40         null
+t06                 integer                                   4           44         null
+getch               integer                                   4           48         null
+-------------------------------------------------------------------------------------------------------------------
+
+==============================
+Quad Translation
+------------------------------
+
+main: 
+
+	1   :	t00 = 0
+	2   :	num = t00
+	3   :	param t01
+	4   :	t02 = call printf, 1
+	5   :	param t03
+	6   :	t04 = &num
+	7   :	param t04
+	8   :	t05 = call scanf, 2
+	9   :	param num
+	10  :	t06 = call fibonacci, 1
+
+fibonacci: 
+
+
+fibonacci: 
+
+	13  :	t00 = 3
+	14  :	i = t00
+	15  :	t01 = 0
+	16  :	a = t01
+	17  :	t03 = 1
+	18  :	b = t03
+	19  :	t05 = 1
+	20  :	if num == t05 goto 23
+	21  :	goto 27
+	22  :	goto 27
+	23  :	param t06
+	24  :	param a
+	25  :	t07 = call printf, 2
+	26  :	goto 27
+	27  :	t08 = 2
+	28  :	if num >= t08 goto 31
+	29  :	goto 36
+	30  :	goto 36
+	31  :	param t09
+	32  :	param a
+	33  :	param b
+	34  :	t10 = call printf, 3
+	35  :	goto 36
+	36  :	if i <= num goto 38
+	37  :	goto 
+	38  :	t11 = a + b
+	39  :	c = t11
+	40  :	param t13
+	41  :	param c
+	42  :	t14 = call printf, 2
+	43  :	a = b
+	44  :	b = c
+	45  :	t17 = i
+	46  :	i = i + 1
+	47  :	goto 36
+------------------------------

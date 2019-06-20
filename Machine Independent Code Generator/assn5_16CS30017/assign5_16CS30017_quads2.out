@@ -1,0 +1,111 @@
+===================================================================================================================
+Symbol Table: Global                                                             Parent: null
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+main                integer                                   4           0          main
+-------------------------------------------------------------------------------------------------------------------
+
+===================================================================================================================
+Symbol Table: main                                                               Parent: Global
+----------------------------------------------------------------------------------------------------
+Name           Type                     Initial Value                 Size        Offset      Nested
+-------------------------------------------------------------------------------------------------------------------
+return              integer                                   4           0          null
+printf              integer                                   4           4          null
+t00                 ptr(char)                "\n\n\t\tStudytonight - Best place to learn\n\n\n"4           8          null
+t01                 integer                                   4           12         null
+n                   integer                                   4           16         null
+i                   integer                  3                4           20         null
+t02                 integer                  3                4           24         null
+count               integer                                   4           28         null
+c                   integer                                   4           32         null
+t03                 ptr(char)                "\nEnter the number of prime numbers required :  "4           36         null
+t04                 integer                                   4           40         null
+scanf               integer                                   4           44         null
+t05                 ptr(char)                "%d"             4           48         null
+t06                 ptr(integer)                              4           52         null
+t07                 integer                                   4           56         null
+t08                 integer                  1                4           60         null
+t09                 ptr(char)                "\n\nFirst %d prime numbers are :  "4           64         null
+t10                 integer                                   4           68         null
+t11                 ptr(char)                "2 "             4           72         null
+t12                 integer                                   4           76         null
+t13                 integer                  2                4           80         null
+t14                 integer                                   4           84         null
+t15                 integer                                   4           88         null
+t16                 integer                  2                4           92         null
+t17                 integer                                   4           96         null
+t18                 integer                                   4           100        null
+t19                 integer                                   4           104        null
+t20                 integer                  0                4           108        null
+t21                 ptr(char)                "%d "            4           112        null
+t22                 integer                                   4           116        null
+t23                 integer                                   4           120        null
+t24                 ptr(char)                "\n\n\n\n\t\t\tCoding is Fun !\n\n\n"4           124        null
+t25                 integer                                   4           128        null
+t26                 integer                  0                4           132        null
+-------------------------------------------------------------------------------------------------------------------
+
+==============================
+Quad Translation
+------------------------------
+
+main: 
+
+	1   :	param t00
+	2   :	t01 = call printf, 1
+	3   :	t02 = 3
+	4   :	i = t02
+	5   :	param t03
+	6   :	t04 = call printf, 1
+	7   :	param t05
+	8   :	t06 = &n
+	9   :	param t06
+	10  :	t07 = call scanf, 2
+	11  :	t08 = 1
+	12  :	if n >= t08 goto 15
+	13  :	goto 21
+	14  :	goto 21
+	15  :	param t09
+	16  :	param n
+	17  :	t10 = call printf, 2
+	18  :	param t11
+	19  :	t12 = call printf, 1
+	20  :	goto 21
+	21  :	t13 = 2
+	22  :	count = t13
+	23  :	if count <= n goto 28
+	24  :	goto 52
+	25  :	t15 = i
+	26  :	i = i + 1
+	27  :	goto 23
+	28  :	t16 = 2
+	29  :	c = t16
+	30  :	if c > i goto 35
+	31  :	goto 42
+	32  :	t18 = c
+	33  :	c = c + 1
+	34  :	goto 30
+	35  :	t19 = i % c
+	36  :	t20 = 0
+	37  :	if t19 == t20 goto 40
+	38  :	goto 32
+	39  :	goto 41
+	40  :	goto 32
+	41  :	goto 32
+	42  :	if c == i goto 45
+	43  :	goto 25
+	44  :	goto 51
+	45  :	param t21
+	46  :	param i
+	47  :	t22 = call printf, 2
+	48  :	t23 = count
+	49  :	count = count + 1
+	50  :	goto 25
+	51  :	goto 25
+	52  :	param t24
+	53  :	t25 = call printf, 1
+	54  :	t26 = 0
+	55  :	ret t26
+------------------------------
